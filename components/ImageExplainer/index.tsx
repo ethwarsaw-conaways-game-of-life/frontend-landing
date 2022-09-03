@@ -17,7 +17,7 @@ export default function ImageExplainer({
 }: img_props) {
   return (
     <div className={styles.container}>
-      <Image src={img} alt="my gif" height={500} width={500} />
+      <Image src={img} alt="my gif" style={{height: '100%', width: '100%'}}/>
       <a href={link} className={styles.link}>
         <div>
           {title}
