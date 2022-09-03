@@ -1,5 +1,8 @@
 import React from 'react';
 import Head from 'next/head';
+import grid from '../public/assets/grid.jpg'
+import single_player from '../public/assets/single_player.gif'
+import ImageExplainer from '../components/ImageExplainer';
 import styles from '../styles/Rules.module.css';
 
 export default function rules() {
@@ -18,11 +21,52 @@ export default function rules() {
           How to Play
         </h1>
         <div className={styles.display_rules}>
-
-        </div>
-        <p className={styles.description}>
             
-        </p>
+           
+  
+          <div className={styles.rules_intro}>
+            <h2>Rules of the game.</h2>
+            <p className={styles.description}>
+            The universe of the Game of Life is an infinite, two-dimensional orthogonal grid of square cells, each of which is in one of two possible states, live or dead (or populated and unpopulated, respectively). Every cell interacts with its eight neighbours, which are the cells that are horizontally, vertically, or diagonally adjacent. At each step in time, the following transitions occur:
+            <br />
+            <ImageExplainer 
+              img={grid} 
+              title={'game board with one cell'} 
+              tagline={'the board '} 
+              link={''}
+            />
+            <br />
+            <ol>
+              <li className={styles.list_item}>
+                Any live cell with fewer than two live neighbours dies, as if by underpopulation.
+              </li>
+              <li className={styles.list_item}>
+                Any live cell with two or three live neighbours lives on to the next generation.
+              </li>
+              <li className={styles.list_item}>
+              Any live cell with more than three live neighbours dies, as if by overpopulation.
+              </li>
+              <li className={styles.list_item}>
+              Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
+              </li>
+            </ol>
+            <br/>
+            <ImageExplainer 
+              img={single_player} 
+              title={''} 
+              tagline={''} 
+              link={''}/>
+            These rules, which compare the behavior of the automaton to real life, can be condensed into the following:
+
+            Any live cell with two or three live neighbours survives.
+            Any dead cell with three live neighbours becomes a live cell.
+            All other live cells die in the next generation. Similarly, all other dead cells stay dead.
+
+            The initial pattern constitutes the seed of the system. The first generation is created by applying the above rules simultaneously to every cell in the seed, live or dead; births and deaths occur simultaneously, and the discrete moment at which this happens is sometimes called a tick.[nb 1] Each generation is a pure function of the preceding one. The rules continue to be applied repeatedly to create further generations. 
+            </p>
+          </div>
+        </div>
+       
       </main>
     </div>
   )
