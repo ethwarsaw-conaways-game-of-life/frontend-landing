@@ -6,7 +6,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Conaway's game of life.</title>
+        <title>Conaways game of life.</title>
         <meta name="description" content="Conaway's game of life." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <h1 className={styles.title}
           style={{maxWidth: '70%'}}
         >
-          Welcome to a competitve <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conaway's Game of Life</a>
+          Welcome to a competitve <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conaways Game of Life</a>
         </h1>
         <p className={styles.description}>
           Get started by reading 
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h2>Rules &rarr;</h2>
-            <p>Find in-depth information about Conaway's Game of Life</p>
+            <p>Find in-depth information about Conaways Game of Life</p>
           </a>
 
           <a href="https://nextjs.org/learn" className={styles.card}>

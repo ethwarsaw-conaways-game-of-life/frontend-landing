@@ -120,7 +120,7 @@ export default function rules() {
                   Player 2 joins the game room and places their 15 cells on the board
                   </li>
                   <li className={styles.list_item}> 
-                  The game will run until there's only 1 player standing, or the game reaches 500 generations.
+                  The game will run until theres only 1 player standing, or the game reaches 500 generations.&apos;
                   </li>
                   <li className={styles.list_item}> 
                   The player with the most amount of cells remaining by the end will win the total pooled bets.
@@ -131,7 +131,8 @@ export default function rules() {
                 The results will be minted as an NFT and put on a leaderboard for people to view, we hope to contribute to the body of data for researchers to learn from.
                 <br />
                 <br />
-                You're all ready to start the game, good luck!
+                Youre all ready to start the game, good luck!
+                &apos;
               </p>
                
             </div>
